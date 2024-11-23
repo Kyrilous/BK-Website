@@ -1,0 +1,89 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Wheel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="slider.js"></script>
+</head>
+<body>
+    <header class="header-container">
+        <h1 class="header-title">Customize Your Wheel</h1>
+        <p class = "header-description">Build Your Dream Steering Wheel !</p>
+    </header>
+
+    <div class="content-container">
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="images/MaximaWheel.png" alt="Steering Wheel 1">
+                </div>
+                <div class="slide">
+                    <img src="images/MaximaWheel2.png" alt="Steering Wheel 2">
+                </div>
+                <div class="slide">
+                    <img src="images/MaximaWheel3.PNG" alt="Steering Wheel 3">
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+        
+            <!-- Navigation Buttons -->
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+        
+    
+        <!-- Form Section -->
+        <div class="form-container">
+            <div class="dropdown-container">
+                <div class="dropdown-item">
+                    <label for="stitching-color">Stitching Color</label>
+                    <select name="stitching-color" id="stitching-color">
+                        <option value="white">White</option>
+                        <option value="red">Red</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+    
+                <div class="dropdown-item">
+                    <label for="carbon-color">Carbon Color</label>
+                    <select name="carbon-color" id="carbon-color">
+                        <option value="regular">Regular</option>
+                        <option value="white">White</option>
+                        <option value="red">Red</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="blue">Blue</option>
+                        <option value="green">Green</option>
+                    </select>
+                </div>
+    
+                <div class="dropdown-item">
+                    <label for="material-type">Material Type</label>
+                    <select name="material-type" id="material-type">
+                        <option value="perforated leather">Perforated Leather</option>
+                        <option value="alcantara">Alcantara</option>
+                    </select>
+                </div>
+    
+                <div class="dropdown-item">
+                    <label for="carbon-thumbgrips">Carbon Thumbgrips</label>
+                    <select name="carbon-thumbgrips" id="carbon-thumbgrips">
+                        <option value="add-carbon-thumbgrips">Add Carbon Thumbgrips</option>
+                        <option value="decline-carbon-thumbgrips">No Thank You</option>
+                    </select>
+                </div>
+            </div>
+    
+            <div class="action-container">
+                <button class="submit-button">Submit Customization</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>

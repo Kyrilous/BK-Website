@@ -1,0 +1,441 @@
+nav{
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+}
+
+.content-spacer {
+    flex: 1 1 auto;
+}
+
+.navTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.searchInput{
+    border: none;
+    background-color: transparent;
+}
+
+.searchInput::placeholder{
+    color: lightgray;
+}
+
+.limitedOffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+
+}
+
+.navBottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuItem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+
+.product-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensures cards wrap if there’s not enough space */
+    padding: 40px;
+    background-color: rgba(17, 17, 17, 0.9);
+}
+
+.product-section a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 10%; /* Ensures the link covers the entire card */
+}
+
+/* Styling for the cards */
+.product-card {
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+    transition: transform 0.3s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(253, 178, 178); /* Accent color for titles */
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.product-card .price {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+body {
+    background: url(images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.featured-slider {
+    position: relative;
+    width: 60%; /* Adjust width as needed */
+    max-width: 1200px;
+    margin: 0 auto; /* Centers the slider */
+    overflow: hidden;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.slide{
+    display: none;
+    text-align: center;
+    position: relative;
+}
+
+.slide.active{
+    display: block;
+}
+
+.slide img {
+    width: 80%; /* Make each image smaller within the slider */
+    max-width: 800px;
+    aspect-ratio: 16 / 9; /* Optional: keep a specific aspect ratio */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.slide-text{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.cta-button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #32cd32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    z-index: 999; /* Ensure buttons are above all elements */
+}
+
+
+
+.prev{
+    left: 20px;
+}
+
+.next{
+    right: 20px;
+}
+
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 150px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.social-links a {
+    color: #32CD32;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Section styling for the list */
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.product-card:focus {
+    outline: none;
+}
+
+.header-container {
+    text-align: center;
+    padding: 20px; /* Reduced padding */
+    background: linear-gradient(to bottom, #333, #555); /* Subtle gradient */
+    border-radius: 10px; /* Softer look */
+    color: white;
+    margin: 20px auto; /* Add space around the header */
+    max-width: 100%;
+}
+
+
+.header-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+
+.header-description {
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+.customization-section {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    padding: 20px;
+    margin: 0 auto; /* Center the section */
+    max-width: 800px; /* Limit width */
+    background: rgba(255, 255, 255, 0.9); /* Light overlay */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add depth */
+}
+
+.image-container {
+    flex: 1; /* Adjust size based on available space */
+    text-align: center;
+}
+
+.wheel-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+}
+
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column; /* Stack dropdowns vertically */
+    gap: 15px; /* Space between dropdowns */
+}
+.dropdown-item {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+select:focus {
+    border-color: #fe9afd; /* Accent color */
+    outline: none;
+}
+
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #32cd32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    .submit-button:hover {
+        background-color: #28a428;
+    }
+}
+
+.customization-section {
+    background: rgba(255, 255, 255, 0.8); /* Lighter overlay */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add depth */
+    margin: 20px auto;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap for smaller screens */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between image and form */
+    max-width: 1200px; /* Limit width */
+    margin: 20px auto; /* Center horizontally */
+}
+
+select:hover {
+    border-color: #ff7eb3; /* Highlight on hover */
+}
+
+.submit-button:hover {
+    background-color: #008717;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd; /* Subtle border */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    margin: 20px auto; /* Add space below */
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .form-container {
+        max-width: 100%; /* Full width on small screens */
+    }
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust size */
+    margin: 20px auto; /* Center the slider */
+    overflow: hidden; /* Hide overflowing slides */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth sliding animation */
+}
+
+.slide {
+    min-width: 100%; /* Ensure each slide takes full width */
+    transition: opacity 0.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
